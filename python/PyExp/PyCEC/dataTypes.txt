@@ -1,0 +1,86 @@
+Numbers  ---> 1234, 3.1415, 3+4j, 0b111, Decimal(), Fraction()
+Strings  ----> 'spam', "Bob's", b'a\x01c', u'sp\xc4m'
+Lists    ----> [1, [2, 'three'], 4.5],list(range(10))
+
+Dictionaries ---> {'food': 'spam', 'taste': 'yum'},dict(hours=10)
+Tuples --> (1, 'spam', 4, 'U'),tuple('spam'),namedtuple
+
+Files --> open('eggs.txt'),open(r'C:\ham.bin', 'wb')
+
+Sets --> set('abc'),{'a', 'b', 'c'} 
+
+Other core types --> Booleans, types, None
+
+Program unit types --> Functions, modules, classes 
+Implementation-related types --> Compiled code, stack tracebacks
+
+
+
+'%s, eggs, and %s' % ('spam', 'SPAM!')
+'{0}, eggs, and {1}'.format('spam', 'SPAM!')
+'{}, eggs, and {}'.format('spam', 'SPAM!')
+'{:,.2f}'.format(296999.2567)
+'%.2f | %+05d' % (3.14159, −42)
+
+
+import math
+math.pi
+
+'spam'.encode('utf8')
+
+
+
+
+Decimal('3.14')
+Decimal('NaN')
+Decimal('-Infinity')
+Decimal(2).sqrt()
+
+The fractions module provides support for rational number arithmetic.
+
+from fractions import Fraction
+
+G = (sum(row) for row in M)
+list(map(sum, M))
+
+Dictionary
+value = D.get('x', 0)
+value
+0
+value = D['x'] if 'x' in D else 0 >>> value
+0
+
+
+
+[ord(x) for x in 'spaam'] [115, 112, 97, 97, 109]
+{ord(x) for x in 'spaam'} {112, 97, 115, 109}
+{x: ord(x) for x in 'spaam'}
+{'p': 112, 'a': 97, 's': 115, 'm': 109}
+(ord(x) for x in 'spaam')
+<generator object <genexpr> at 0x000000000254DAB0>
+
+
+ if type(L) == type([]):
+ if type(L) == list:
+ if isinstance(L, list):
+ 
+
+
+Pattern Matching
+import re
+match = re.match('Hello[ \t]*(.*)world', 'Hello Python world')
+match.group(1)
+
+match = re.match('[/:](.*)[/:](.*)[/:](.*)', '/usr/home:lumberjack')
+match.groups()
+
+
+
+
+
+
+
+
+
+
+sureshcth@gmail.com
