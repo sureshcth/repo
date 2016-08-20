@@ -20,4 +20,4 @@ def save_photos(photos):
         print "successfully downloaded pic_%s " % counter
         urllib.urlretrieve(photo['src'],"pic_%s" %counter)
 if __name__ == '__main__':
-    save_photos(get_photos())
+    save_photos(get_photos())   
