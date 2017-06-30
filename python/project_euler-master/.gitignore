@@ -1,0 +1,5 @@
+*.*~
+*.pyc
+*.pdf
+.project
+.pydevproject
